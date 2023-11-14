@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+.resume { 
+    color:blue;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.recipe {
+    width: 50%;
+    height: 100%;
+}
+
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -8px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* FORMATAÇÃO DO CABEÇALHO */
+
+header {
+    border-bottom: 0.5px solid #606060;
+}
+
+header h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Caesar Dressing', Helvetica, sans-serif;
+    text-align: left;
+    font-size: 40px;
+    color: rgb(220, 168, 99);
+    text-shadow: 3px 3px 5px black;  
+}
+
+header h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color:rgb(219, 166, 97) ;
+    text-shadow: 1px 1px 2px black; 
+}
+
+nav.menu {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin: 0px;
+}
+
+nav.menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px; 
+    background-color: #dddddd;
+    transition: background-color 1s;
+}
+
+nav.menu ul {
+    list-style: none;
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* FORMATAÇÃO DO FOTOS */
+
+figure.figcaption {
+    position: relative;
+
+
+}
+
+figure.figcaption img {
+    width: 300px;
+    height: 200px;
+    border: 15px solid transparent;
+    border-image: url('./border.png') 30 round;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+}
+
+figure.figcaption figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 330px;
+    height: 230px;
+    transition: opacity 1s;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 15px solid transparent;
+    border-image: url('./border.png') 30 round;  
+}
+
+figure.figcaption:hover figcaption {
+    opacity: 1;
+}
+
+
+/* FORMATAÇÃO DO CORPO */
+
+section {
+    float: left;
+    width: 55%;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+aside {
+    float: right;
+    width: 40%;
+}
+
+footer {
+    clear: both;
+}
